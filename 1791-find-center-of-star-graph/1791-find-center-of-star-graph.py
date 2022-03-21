@@ -1,10 +1,13 @@
 class Solution(object):
     def findCenter(self, edges):
-        flattened_edges = list(itertools.chain(*edges))
-        result = [0 for _ in range(len(flattened_edges))]
+        count = {}
+        for i in range(len(edges)):
+            for j in range(2):
+                index = edges[i][j]
+                try:
+                    count[index] += 1
+                except:
+                    count[index] = 1
 
-        for i in flattened_edges:
-            result[i] += 1
-
-        return result.index(max(result))
-        
+        max_value = max(count, key=count.get)
+        return max_value
