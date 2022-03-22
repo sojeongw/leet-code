@@ -16,7 +16,7 @@ class Solution(object):
         if diff == 0:
             return 0
         
-        if diff%limit == 0:
-            return diff//limit
+        if diff % limit == 0:
+            return diff // limit
         
-        return (diff//limit) + 1
+        return (diff // limit) + 1
