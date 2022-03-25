@@ -1,4 +1,34 @@
-# Sample Submissions
+# 문제
+
+```text
+Input: edges = [[1,2],[2,3],[4,2]]
+Output: 2
+```
+
+- star 형태의 그래프를 표현한 리스트에서 center 노드 값이 무엇인지 알아낸다.
+
+# 제출 답안
+
+```python
+class Solution(object):
+    def findCenter(self, edges):
+        count = {}
+        for i in range(len(edges)):
+            for j in range(2):
+                index = edges[i][j]
+                try:
+                    count[index] += 1
+                except:
+                    count[index] = 1
+
+        max_value = max(count, key=count.get)
+        return max_value
+```
+
+- 2중 for문을 돌면서 중복값이 있으면 해당 인덱스에 1을 더한다.
+- 그럼 제일 많이 count 된 것이 center node가 된다.
+
+# 모범 답안
 
 ```python
 class Solution(object):

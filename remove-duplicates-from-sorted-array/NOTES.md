@@ -1,4 +1,8 @@
-# Notes
+# 문제
+
+- 새 배열을 만들지 않고 중복 값을 제거한다.
+
+# 제출 답안
 
 ![](../assets/IMG_69ED8997C98B-1.jpeg)
 
@@ -8,7 +12,7 @@
 - 중복되지 않고 오롯이 혼자인 걸 계산한 게 결국 length니까 이 둘이 같으면 반복문을 빠져나오게 했다.
 - 반복문도 있지만 그 안에서도 pop(i) 때문에 O(N)이 더 걸린다.
 
-## Sample Submission
+## 모범 답안
 
 ```python
 class Solution(object):
