@@ -51,7 +51,7 @@ class Solution:
         # 인덱스와 원소를 동시에 접근하면서 루프를 돌리는 함수
         for i, word in enumerate(words):
             if word.endswith("("):
-                # '(' 괄호는 '' 빈 값으로 대체한다.
+                # '(' 면 ''을, '글자('이면 '글자'로 담는다.
                 words[i] = words[i][:-1]
                 # '('의 다음 인덱스는 변환 대상이다.
                 # 키가 d에 존재하면 그 값으로, 아니면 ?로 대체한다.
