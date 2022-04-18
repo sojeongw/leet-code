@@ -26,8 +26,6 @@ class Solution:
 - 체스 판을 그대로 그린다.
 - letter는 아스키 값으로, 숫자는 -1한 인덱스로 위치를 계산해 반환한다.
 
-# 모범 답안
-
 ```python
 class Solution:
     def squareIsWhite(self, coordinates: str) -> bool:
@@ -37,6 +35,8 @@ class Solution:
 
 - 41 ms, faster than 61.83%
 - (x, y) 좌표값을 구해 x + y를 했을 때 홀수면 흰색이 나온다.
+
+# 모범 답안
 
 ```python
 class Solution:
