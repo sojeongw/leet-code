@@ -2,7 +2,7 @@
 
 - 주어진 체스판 위치가 블랙이면 false, 화이트면 true
 
-# 제출 답안
+## 제출 답안
 
 ```python
 class Solution:
@@ -36,7 +36,7 @@ class Solution:
 - 41 ms, faster than 61.83%
 - (x, y) 좌표값을 구해 x + y를 했을 때 홀수면 흰색이 나온다.
 
-# 모범 답안
+## 모범 답안
 
 ```python
 class Solution:
