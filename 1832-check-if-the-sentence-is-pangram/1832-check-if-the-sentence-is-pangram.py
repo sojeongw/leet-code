@@ -5,8 +5,8 @@ class Solution(object):
         :rtype: bool
         """
         dic = {}
-
         for s in sentence:
             dic[s] = 1
-
-        return len(dic) == 26
+        if len(dic) == 26:
+            return True
+        return False
