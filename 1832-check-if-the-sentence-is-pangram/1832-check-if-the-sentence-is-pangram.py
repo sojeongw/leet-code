@@ -4,12 +4,9 @@ class Solution(object):
         :type sentence: str
         :rtype: bool
         """
-        if len(sentence) < 26:
-            return False
-        
-        removed_duplicates = set(sentence)
+        dic = {}
 
-        if len(removed_duplicates) == 26:
-            return True
-        else:
-            return False
+        for s in sentence:
+            dic[s] = 1
+
+        return len(dic) == 26
