@@ -4,6 +4,9 @@ class Solution(object):
         :type sentence: str
         :rtype: bool
         """
+        if len(sentence) < 26:
+            return False
+        
         removed_duplicates = set(sentence)
 
         if len(removed_duplicates) == 26:
